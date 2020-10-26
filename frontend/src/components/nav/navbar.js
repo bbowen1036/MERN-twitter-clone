@@ -14,7 +14,8 @@ class NavBar extends React.Component {
       this.props.logout();
   }
 
-  // Selectively render links dependent on whether the user is logged in
+  // Selectively render links dependent on whether the user is logged in//
+  
   getLinks() {
       if (this.props.loggedIn) {
         return (
@@ -34,7 +35,6 @@ class NavBar extends React.Component {
         );
       }
   }
-
   render() {
       return (
         <div>
